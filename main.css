@@ -1,5 +1,6 @@
 #header {
- font-size: 4em;
+ font-size: 3em;
  flex-basis: auto;
- color: rgba(224, 48, 6, 0.85)
+ color: rgba(224, 48, 6, 0.85);
+ align-content: center;
 }
