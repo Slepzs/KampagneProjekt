@@ -1,21 +1,14 @@
-var blue = document.getElementById('blue');
-var red = document.getElementById('red');
+var slideIndex = 0;
+showSlides();
 
-blue.onclick = function(p1) {
-    blue.style.backgroundColor = "blue";
-}
-red.onclick = function(p2) {
-    red.style.backgroundColor = "red";
-}
-
-console.log("Det virker");
-
-
-function cos() {
-    var image = document.getElementById("green");
-    if (backgroundColor = "green" > backgroundColor = "yellow") {
-        image.style.backgroundColor = "green";
-    } else {
-        image.style.backgroundColor = "yellow";
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
     }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 4000); // Skifter billede hvert 4 sekund
 }

@@ -1,6 +1,83 @@
-#header {
- font-size: 3em;
- flex-basis: auto;
- color: rgba(224, 48, 6, 0.85);
- align-content: center;
+/* Wrapper før at gøre det hele 960px */
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+.logo {
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+}
+.navbar {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    border-bottom: 5px solid blue;
+    text-decoration-line: none; 
+    text-align: center;
+    width: 100%;
+    -webkit-transition: font-size 2s; /* For Safari 3.1 to 6.0 */
+    transition: font-size 2s;
+}
+
+.navbar ul{
+    margin-top: 0;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.navbar li {
+    margin: 15px;
+    padding: 15px;
+    list-style: none;
+    display: inline;
+    font-size: 2em;
+    font-family: 'Cormorant Garamond', serif;
+    text-decoration: none;
+    
+}
+.navbar a {
+    text-decoration: none;
+    
+}
+
+.navbar a:hover {
+    color: black;
+    font-size: 2em; 
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+padding-top: 30px;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+/* Gør at det fungere på mobil */
+@media screen and (max-width: 600px){
+        ul.navbar li.right,
+    ul.navbar li {float: none;}
 }
