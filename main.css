@@ -1,56 +1,39 @@
-body {
-    background-image: url(img/p6.png);
-    margin: 0;
-    padding: 0;
-}
 /* Wrapper før at gøre det hele 960px */
 .wrapper {
-   max-width: 960px;
-    height: auto;
+    width: 960px;
     margin: 0 auto;
-    background-color: white;
 }
 .logo {
-    max-width: 100%;
-    height: 100%;
+    width: 80px;
+    height: 80px;
     vertical-align: middle;
 }
 .navbar {
-    margin: 0px;
-    padding: 0px;
-    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
     border-bottom: 5px solid blue;
     text-decoration-line: none; 
     text-align: center;
     width: 100%;
-    background-color: white;
-    justify-content: center;
+    -webkit-transition: font-size 2s; /* For Safari 3.1 to 6.0 */
+    transition: font-size 2s;
 }
-@media screen and (max-width: 640px){
-    .navbar li {margin-bottom: 50px;}
-    .logo {width: 150px; height: 150px;}
-}
-@media screen and (max-width: 1000px){
-    .navbar li {margin-bottom: 50px;}
-    .logo {width: 150px; height: 150px;}
-}
-
 
 .navbar ul{
     margin-top: 0;
-    padding: 0;
+    padding: 0px;
     text-decoration: none;
 }
 
 .navbar li {
-    margin: 50px;
-    padding: 10px;
+    margin: 15px;
+    padding: 15px;
     list-style: none;
     display: inline;
-    font-size: 1.8em;
+    font-size: 2em;
     font-family: 'Cormorant Garamond', serif;
     text-decoration: none;
-    font-weight: 700;
     
 }
 .navbar a {
@@ -60,32 +43,13 @@ body {
 
 .navbar a:hover {
     color: black;
-    font-size: 1.5em;
-    -webkit-transition: font-size 2s;
-    -moz-transition: font-size 2s;
-    -o-transition: font-size 2s;
-    transition: font-size 2s;
-    background-color: blueviolet;
-    border-radius: 10px;
-    
+    font-size: 2em; 
 }
 
 
 /* Slideshow container */
 .slideshow-container {
 padding-top: 30px;
-display: flex;
-justify-content: space-around;
-}
-.slide {
-    max-width: 100%;
-    height: auto;
-    display: flex;
-}
-.textbox {
-    width: 50%;
-    height: auto;
-    display: flex;
 }
 /* Fading animation */
 .fade {
@@ -108,106 +72,12 @@ justify-content: space-around;
 
 
 
+
+
+
+
 /* Gør at det fungere på mobil */
 @media screen and (max-width: 600px){
         ul.navbar li.right,
     ul.navbar li {float: none;}
-    .slideshow-container {flex-wrap: wrap;}
-    .miniwrapper {flex-wrap: wrap;}
-}
-
-.footerone {
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    background-color: rgba(54, 54, 177, 0.95);
-    font-size: 10
-}
-footer p {
-    color: white;
-}
-.footertwo {
-    width: 100%;
-    height: 200px;
-    background-color: black;
-}
-.footertree {
-    width: 100%;
-    height: 50px;
-    background-color: blue;
-}
-.firstbox {
-    margin-top: 80px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    width: 100%;
-    background-color: black;
-    height: 250px;
-    border-radius: 10px;
-    
-}
-.secondbox {
-    margin-top: 80px;
-    margin-left: 75px;
-    margin-bottom: 10px;
-    padding: 10px;
-    width: 100%;
-    background-color: black;
-    height: 250px;
-    border-radius: 10px;
-    
-}
-.thirdbox {
-    margin-top: 80px;
-    margin-left: 77px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    padding: 10px;
-    width: 100%;
-    background-color: black;
-    height: 250px;
-    border-radius: 10px;    
-}
-@media screen and (max-width: 600px){
-    .firstbox {margin-top: 30px;}
-    .secondbox {margin-left: 10px; margin-top: 10px;}
-    .thirdbox {margin-left: 10px; margin-top: 10px;}
-}
-
-.firsttext {
-    margin-top: 5px;
-    margin-left: 0px;
-    margin-bottom: 10px;
-    padding: 10px;
-    width: 100%;
-    background-color: white;
-    height: 150px;
-}
-.secondtext {
-    margin-top: 5px;
-    margin-left: 85px;
-    margin-bottom: 10px;
-    padding: 10px;
-    width: 100%;
-    background-color: white;
-    height: 150px;
-}
-.thirdtext {
-    margin-top: 5px;
-    margin-left: 87px;
-    margin-bottom: 10px;
-    padding: 10px;
-    width: 100%;
-    background-color: white;
-    height: 150px;
-}
-@media screen and (max-width: 600px){
-    .firsttext {margin-left: 10px; margin-bottom: 0px; margin-top: 0px; margin-right: 10px;}
-    .secondtext {margin-left: 10px; margin-bottom: 0px; margin-top: 0px; margin-right: 5px;}
-    .thirdtext {margin-left: 10px; margin-bottom: 0px; margin-top: 0px; margin-right: 5px;}   
-}
-.miniwrapper {
-    display: flex;
-    justify-content: space-around;   
 }
